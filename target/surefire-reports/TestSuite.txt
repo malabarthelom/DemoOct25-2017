@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 30.226 sec <<< FAILURE!
+SEOSpeed(seo.checklistExcel.SEOchecklistTest)  Time elapsed: 1.911 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: Lorg/apache/poi/xssf/usermodel/XSSFWorkbook;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:111)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+	at seo.checklistExcel.SEOchecklistEx.<init>(SEOchecklistEx.java:50)
+	at seo.checklistExcel.SEOchecklistTest.SEOSpeed(SEOchecklistTest.java:28)
+Caused by: java.lang.ClassNotFoundException: org.apache.poi.xssf.usermodel.XSSFWorkbook
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 43 more
+

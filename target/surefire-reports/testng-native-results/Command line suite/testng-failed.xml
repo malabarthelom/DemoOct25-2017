@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test" preserve-order="false">
+    <classes>
+      <class name="seo.checklistExcel.SEOchecklistTest"/>
+      <class name="seo.checklistTest.HQChecklistTest"/>
+      <class name="seo.checklistTest.HqSEOpageSpeedTest"/>
+    </classes>
+  </test> <!-- Command line test -->
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="seo.checklistExcel.SEOchecklistTest">
+        <methods>
+          <include name="SEOSpeed"/>
+        </methods>
+      </class> <!-- seo.checklistExcel.SEOchecklistTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
